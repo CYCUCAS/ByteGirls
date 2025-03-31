@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <style>
+        :root {
+            --color-1: #FD7C9F;
+            --color-2: #585858;
+            --bg-color: black;
+        }
+
+        body {
+            font-family: 'SF Pro', 'Segoe UI';
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: var(--bg-color);
+            color: var(--color-1);
+            font-weight: bold;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+            border-radius: 15px;
+        }
+
+        h1 {
+            font-family: 'Baskerville', 'Times New Roman';
+            font-size: 30px;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+
+        form {
+            border: 2px solid var(--color-1);
+            background-color: black;
+            padding: 40px;
+            border-radius:15px;
+            width: 300px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            color: var(--color-1);
+            width: 92%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid var(--color-1);
+            border-radius: 5px;
+            background-color: transparent;
+        }
+
+        input[type="text"]::placeholder,
+        input[type="password"]::placeholder {
+            color: #fd7c9e89;
+        }
+
+        input[type="text"]:hover,
+        input[type="password"]:hover {
+            box-shadow: 0 0 10px 2px var(--color-1);
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            outline: none;
+            box-shadow: 0 0 10px 2px var(--color-1);
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: var(--color-1);
+            color: var(--bg-color);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        input[type="submit"]:hover {
+            background-color: var(--color-2);
+            color: var(--color-1);
+        }
+
+        p {
+            margin-top: 20px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(58, 58, 58, 0.3);
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(58, 58, 58, 0.7);
+        }
+    </style>
+
+    <link rel="icon" href="{{ url_for('static', filename='ByteGirls_favicon.png') }}" type="image/x-icon">
+</head>
+<body>
+    <img src="{{ url_for('static', filename='ByteGirls.png') }}" class="logo">
+    <h1>ByteGirls</h1>
+    <form method="post">
+        <input type="text" id="phone" placeholder="Phone Number" name="username" required><br>
+        <input type="password" id="password" placeholder="Password" name="password" required><br>
+        <input type="submit" value="Register">
+    </form>
+    <p>Already have an account? <a href="/login">Sign in</a></p>
+</body>
+</html>
