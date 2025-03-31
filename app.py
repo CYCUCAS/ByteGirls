@@ -460,6 +460,8 @@ if __name__ == '__main__':
         init_shared_chat_db()
         init_user_likes_db()
     app.run(host='0.0.0.0', port=6006, debug=True)
+else:
+    gunicorn_app = app
 
 
 # export ARK_API_KEY="efd4fd61-7110-45de-b89e-630a1f3718a2" && python app.py
