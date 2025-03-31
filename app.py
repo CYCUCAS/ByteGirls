@@ -464,4 +464,4 @@ else:
     gunicorn_app = app
 
 
-# export ARK_API_KEY="efd4fd61-7110-45de-b89e-630a1f3718a2" && python app.py
+# export ARK_API_KEY="" && python app.py
