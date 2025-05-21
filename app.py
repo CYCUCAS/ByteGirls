@@ -453,15 +453,21 @@ def search_chats():
         return jsonify({'error': str(e)}), 500
 
 
+# if __name__ == '__main__':
+#     with app.app_context():
+#         db.create_all()
+#         init_chat_history_db()
+#         init_shared_chat_db()
+#         init_user_likes_db()
+#     app.run(host='0.0.0.0', port=6006, debug=True)
+
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()
         init_chat_history_db()
         init_shared_chat_db()
         init_user_likes_db()
-    app.run(host='0.0.0.0', port=6006, debug=True)
-else:
-    gunicorn_app = app
+    app.run(host='0.0.0.0', port=80)
 
 
-# export ARK_API_KEY="" && python app.py
+# export ARK_API_KEY="efd4fd61-7110-45de-b89e-630a1f3718a2" && python app.py

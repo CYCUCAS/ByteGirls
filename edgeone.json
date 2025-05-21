@@ -1,0 +1,8 @@
+{
+  "name": "ByteGirls",
+  "runtime": "python3.8",
+  "entry": "app.py",
+  "env": {
+    "ARK_API_KEY": "efd4fd61-7110-45de-b89e-630a1f3718a2"
+  }
+}
