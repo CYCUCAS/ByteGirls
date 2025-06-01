@@ -6,7 +6,7 @@ Existing popular large language model applications are isolated islands, such as
 
 P.S. When running the web application, modify your large model API settings in the app.py file, then enter export ARK_API_KEY="Enter your API key here" && python app.py in the terminal.
 
-!(https://github.com/CYCUCAS/ByteGirls/blob/main/pics/1.png)
+![ByteGirls](https://github.com/CYCUCAS/ByteGirls/blob/main/pics/1.png)
 !(https://github.com/CYCUCAS/ByteGirls/blob/main/pics/2.png)
 !(https://github.com/CYCUCAS/ByteGirls/blob/main/pics/3.png)
 !(https://github.com/CYCUCAS/ByteGirls/blob/main/pics/4.png)
